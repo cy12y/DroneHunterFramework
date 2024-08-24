@@ -59,4 +59,4 @@ class PowerStatusManipulationModule(BaseModule):
             battery_status_packet = self.create_battery_status()
             self.send_mavlink_packet(battery_status_packet, target_ip, target_port)
             print(f"Sent battery status packet to {target_ip}:{target_port}")
-            time.sleep(1)  # Add delay to avoid overwhelming the network
+            time.sleep(0)  # Add delay to avoid overwhelming the network
